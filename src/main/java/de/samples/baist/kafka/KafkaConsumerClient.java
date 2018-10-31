@@ -1,5 +1,6 @@
 package de.samples.baist.kafka;
 
+import org.apache.commons.collections4.CollectionUtils;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -20,10 +21,10 @@ public class KafkaConsumerClient implements CommandLineRunner {
     private static final Logger LOG = LoggerFactory.getLogger(KafkaConsumerClient.class);
 
     final static Duration timeout = Duration.ofMinutes(10);
-    public static final String TOPIC = "test-consumer";
+    public static String TOPIC = "test-consumer";
 
     private final KafkaConsumer consumer;
-    Properties props = new Properties();
+    private static final Properties props = new Properties();
 
     {
         props.put(StreamsConfig.APPLICATION_ID_CONFIG, "streams-linesplit-rec");
@@ -40,6 +41,21 @@ public class KafkaConsumerClient implements CommandLineRunner {
         props.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());
     }
 
+    private static void parseProperties(String[] optionalProps) {
+        for (int i = 0; i < CollectionUtils.size(optionalProps); ++i) {
+            final String currentArg = optionalProps[i];
+            switch (currentArg) {
+                case "bootstrap.servers":
+                    props.put(currentArg, optionalProps[++i]);
+                    break;
+                case "listen.topic":
+                    TOPIC = optionalProps[++i];
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
 
     public KafkaConsumerClient() {
         this.consumer = new KafkaConsumer(props);
