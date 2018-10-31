@@ -4,6 +4,19 @@ plugins {
     id 'com.google.cloud.tools.jib' version('0.9.11')
 }
 
+jib{
+    from {
+        image = 'openjdk:8-jdk-alpine'
+    }
+    to {
+        image = 'bastianbaist/kafka-consumer'
+        tags = ['configured.jib', 'latest']
+    }
+    container {
+ 
+    }
+}
+
 
 group 'de.sample.baist.kafka'
 version '1.0-SNAPSHOT'
@@ -18,8 +31,6 @@ repositories {
     maven { url 'https://repo.spring.io/libs-snapshot' }
     mavenCentral()
 }
-
-jib.to.image = 'bastianbaist/kafka-consumer'
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
