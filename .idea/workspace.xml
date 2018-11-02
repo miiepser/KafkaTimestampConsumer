@@ -2,25 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="42d820e2-90d6-4ab2-b617-e2041beeaa15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/src/main/java/de/melsicon/jib/demonstration/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jib-Demonstration/src/main/java/de/melsicon/jib/demonstration/HelloWorld.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/PipeKStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaCutpipeKStream/src/main/java/de/samples/baist/kafka/PipeKStream.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaTimestampProducer/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampProducer/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaTimestampProducer/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampProducer/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../KafkaTimestampProducer/src/main/java/de/samples/baist/kafka/KafkaProducerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../KafkaTimestampProducer/src/main/java/de/samples/baist/kafka/KafkaProducerClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../KafkaConsumerClient/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/src/main/java/de/melsicon/jib/demonstration/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../jib-Demonstration/src/main/java/de/melsicon/jib/demonstration/HelloWorld.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/samples/baist/kafka/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/samples/baist/kafka/KafkaProducerClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/main/java/de/samples/baist/kafka/PipeKStream.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -108,7 +115,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-683">
               <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
             </state>
           </provider>
@@ -681,18 +688,17 @@
       <workItem from="1540991704240" duration="20000" />
       <workItem from="1540991757241" duration="2638000" />
       <workItem from="1541140944591" duration="3231000" />
-      <workItem from="1541164875945" duration="605000" />
+      <workItem from="1541164875945" duration="1191000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13411000" />
+    <option name="totallyTimeSpent" value="13997000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12759463" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12759463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -709,7 +715,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.32959184" />
       <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.496337" visible="true" weight="0.29693878" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.496337" visible="true" weight="0.29693878" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.503663" side_tool="true" visible="true" weight="0.29693878" />
       <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.4993895" weight="0.32959184" />
@@ -760,7 +766,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/samples/baist/kafka/KafkaConsumerClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="-683">
           <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
         </state>
       </provider>
