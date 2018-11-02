@@ -1,6 +1,7 @@
 package de.samples.baist.kafka;
 
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.apache.kafka.clients.consumer.ConsumerRecords;
 import org.apache.kafka.clients.consumer.KafkaConsumer;
@@ -9,6 +10,7 @@ import org.apache.kafka.streams.StreamsConfig;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.util.*;
@@ -16,6 +18,7 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
+@Component
 public class KafkaConsumerClient implements CommandLineRunner {
 
     private static final Logger LOG = LoggerFactory.getLogger(KafkaConsumerClient.class);
@@ -23,7 +26,7 @@ public class KafkaConsumerClient implements CommandLineRunner {
     final static Duration timeout = Duration.ofMinutes(10);
     public static String TOPIC = "test-consumer";
 
-    private final KafkaConsumer consumer;
+    private KafkaConsumer consumer;
     private static final Properties props = new Properties();
 
     {
@@ -55,14 +58,22 @@ public class KafkaConsumerClient implements CommandLineRunner {
                     break;
             }
         }
+        final String brokerServer = System.getenv("bootstrap.servers");
+        if(null != brokerServer){
+            props.put("bootstrap.servers", brokerServer);
+        }
+        TOPIC = StringUtils.defaultIfEmpty(System.getenv("listen.topic"), TOPIC);
     }
 
     public KafkaConsumerClient() {
-        this.consumer = new KafkaConsumer(props);
     }
 
     @Override
     public void run(String... args) throws Exception {
+        parseProperties(args);
+        this.consumer = new KafkaConsumer(props);
+
+        LOG.info("Listening to Topic {} received configured broker server {} ", TOPIC, props.getProperty("bootstrap.servers"));
         AtomicBoolean ab = new AtomicBoolean(true);
         Runtime.getRuntime().addShutdownHook(new Thread("streams-shutdown-hook") {
             @Override
