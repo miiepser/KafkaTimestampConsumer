@@ -13,7 +13,7 @@ jib{
         tags = ['configured.jib', 'latest']
     }
     container {
-
+        useCurrentTimestamp = true
     }
 }
 
